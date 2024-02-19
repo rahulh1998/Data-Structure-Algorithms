@@ -4,5 +4,3 @@
 <h4>Author : Rahul Hirondi :sunglasses:</h4>
 <h5>Gen-AI | Machine Learning | Python</h5>
 
-This is a change committed to dev branch
-This is a second change to dev branch
