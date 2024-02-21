@@ -20,4 +20,4 @@ def isPrime2(n):
 
     return True 
 
-print(isPrime2(67))
+print(isPrime2(43))
