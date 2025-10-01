@@ -1,7 +1,7 @@
 def bubble_sort(arr):
     for start in range(len(arr)):
-        for i in range(len(arr)-1,start,-1):
-            if arr[i-1]>arr[i]:
+        for i in range(len(arr)-1,start,-1): # -1 as we want to sort it from right to left
+            if arr[i-1]<arr[i]:
                 arr[i-1],arr[i] = arr[i],arr[i-1]
     print(arr)
     return arr
