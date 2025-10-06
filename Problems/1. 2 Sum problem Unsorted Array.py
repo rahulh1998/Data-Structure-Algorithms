@@ -6,8 +6,10 @@ def twosum_unsorted(arr, target):
             print(seen[complement], i)
             break
         seen[num] = i
+    print(len(seen))
 
-
-numbers = [2, 3, 4, 7, 11, 15]  # must be sorted
+numbers = [2, 3, 4, 7, 11, 15] 
 target = 9
 print(twosum_unsorted(numbers, target))
+
+
