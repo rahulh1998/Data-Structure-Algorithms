@@ -19,3 +19,25 @@
 # 1 <= n <= 105
 # 1 <= array elements (except those zeroes) <= 2 * 109
 # You can use only constant auxiliary space.
+
+def merge_sorted(first, second):
+    i = 0
+    j = 0
+
+    while j<len(second) and i < len(first):
+
+        if  first[i] < second[j]:
+            first[i], second[j] = second[j], first[i]
+            j+=1
+
+        elif (first[i] > second[j]) and second[j] == 0:
+            first[i], second[j] = second[j], first[i]
+            i+=1
+            j=0
+
+        else:
+            j+=1
+
+    return second
+
+print(merge_sorted([1,3,5], [2,4,6,0,0,0]))    
