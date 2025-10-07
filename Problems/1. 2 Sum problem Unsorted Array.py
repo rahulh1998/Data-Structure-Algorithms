@@ -3,7 +3,6 @@ def twosum_unsorted(arr, target):
     for i, num in enumerate(arr):
         complement = target - num
         if complement in seen:
-            print(seen[complement], i)
             break
         seen[num] = i
     print(len(seen))
