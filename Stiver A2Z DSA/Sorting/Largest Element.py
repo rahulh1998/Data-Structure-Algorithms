@@ -17,5 +17,16 @@
 
 # Explanation: The largest element in array is 99
 
-# Input: nums = [-4, -3, 0, 1, -8]
+# Input: 
+# 
+nums = [-4, -3, 0, 1, -8]
 
+def largestNum(arr): # Selection Sort
+    
+    largest = arr[0]
+    for i in arr:
+        if i > largest:
+            largest = i
+    return largest
+
+print(largestNum(nums))
