@@ -28,6 +28,8 @@
 
 # There are 4 distinct elements in nums and the elements marked as _ can have any value.
 
+
+# approach 1
 def removeDups(arr):
     total_unique_elements = len(arr)
 
@@ -39,3 +41,11 @@ def removeDups(arr):
     
 arr = [1, 2, 3, 4, 5]
 print(removeDups(arr))
+
+# # approach 2
+
+# def removeDups2(arr):
+#     count = 0 
+#     for i in range(1, len(arr)):
+#         if arr[i]==arr[i-1]:
+            
