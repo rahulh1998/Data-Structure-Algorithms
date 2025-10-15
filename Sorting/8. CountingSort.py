@@ -16,7 +16,7 @@ def counting_sort(arr):
     arr_index = 0
     for i in range(min_element, max_element + 1):
         if i in frequency:
-            current_frequency = frequency[i];
+            current_frequency = frequency[i]
             while current_frequency > 0:
                 arr[arr_index] = i
                 arr_index += 1
