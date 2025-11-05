@@ -15,18 +15,17 @@
 # Explanation: The sum of elements (6) divided by the number of elements (3) gives the mean: 2
 
 
-def helper(nums,i):
-    if i<0:
+def helper(nums):
+    if len(nums) == 0:
         return 0
-    
-    sum = helper(nums,i-1)
-    print("returning, ", nums[i-1] )
-    return  nums[i-1]
+
+    return nums[0] + helper(nums[1:])
+
 
 def mean_of_array(nums):
-    len_arr = len(nums)-1
-
-    print(helper(nums, len_arr))
+    len_nums = len(nums)
+    sum = helper(nums)
+    return sum/len_nums
 
 nums = [1, 2, 3, 4, 5]    # [i for i in range(1,6)]
-mean_of_array(nums)
+print(mean_of_array(nums))
