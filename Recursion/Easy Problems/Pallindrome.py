@@ -16,5 +16,5 @@ def helper(s, left, right):
     return helper(s, left+1,right-1)
 
 
-pallindrome('aba')
+pallindrome('aaba')
 
